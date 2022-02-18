@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block title %}Appointment{% endblock title %}
+
+{% block body %}
+
+<div class="row, pt-5">
+    <h1 class="text-center my-4"> Appointment Form </h1>
+    <div class="col-md-5 mx-auto">
+        <div class="card card-body">     
+
+<div class="container my-4 px-0">
+    <form>
+        <style>
+            body {
+                background-image: url('#');
+                background-repeat: no-repeat;
+                background-position: full;
+                background-attachment: fixed;
+            }
+        </style>
+
+        <body>
+            <font color="black">
+                <form>
+                    <b>Full Name:*
+                        <input type="text">
+                        <br /><br />
+                        Gender:*
+                        <input type="radio" name="gender">Male
+                        <input type="radio" name="gender">Female
+                        <br /><br />
+                        Address:*
+                        <textarea name="Address" rows=3 cols=25></textarea>
+                        </br></br>
+                        Phone no: *
+                        <input type="text" size="0-9">
+                        </br></br>
+                        Email id:*
+                        <input type="email" name="email" id="email">
+                        </br></br>
+                        Date:*
+                        <input type="date" size="30">
+                        </br></br>
+                        Age:*
+                        <input type="number" size="100">
+                        </br></br>
+                        I Would Like To Choose:*
+                        <input type="radio">A Routine Checkup</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio">A New Patient Appointment
+                        </br></br>
+                        <input class="btn btn-primary btn-block" type="SUBMIT" value="SUBMIT">
+                        <input class="btn btn-primary btn-block" type="RESET" value="RESET">
+                    </b>
+                </form>
+            </font>
+        </body>
+    </form>
+</div>
+</div>
+</div>
+</div>
+
+{% endblock body %}
